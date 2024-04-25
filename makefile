@@ -5,3 +5,8 @@ help:
 ## Login to db provider and set up connection
 authentificate_db:
 	bun run --bun xata auth login
+
+.ONESHELL:
+## Run project locally
+dev:
+	bun run --bun dev

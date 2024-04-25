@@ -5,7 +5,7 @@ definePageMeta({
 
 const { $client } = useNuxtApp();
 const resp = await $client.hello.query({ text: "Max" });
-const worries = await $client.worries.query();
+const worries = await $client.worries.latest.query();
 </script>
 
 <template>
@@ -13,7 +13,7 @@ const worries = await $client.worries.query();
         <h1>Home</h1>
         <p>{{ resp.greeting }}</p>
         <ul>
-            <li v-for="worry in worries">{{ worry.worry_text }}</li>
+            <li v-for="worry in worries.records">{{ worry.worry_text }}</li>
         </ul>
     </div>
 </template>
