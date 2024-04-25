@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Personal-0r2ml9.eu-west-1.xata.sh/db/anxiety",
+  "codegen": {
+    "output": "server/db/xata.ts"
+  }
+}

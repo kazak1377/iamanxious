@@ -1,0 +1,29 @@
+{
+  "done": true,
+  "migration": {
+    "name": "mig_col4jve313u6cbeckchg",
+    "operations": [
+      {
+        "add_column": {
+          "table": "worries",
+          "column": {
+            "pk": false,
+            "name": "worry_text",
+            "type": "text",
+            "check": {
+              "name": "worries_xata_text_length_worry_text",
+              "constraint": "OCTET_LENGTH(\"worry_text\") <= 204800"
+            },
+            "unique": false,
+            "comment": "{\"xata.type\":\"text\"}",
+            "nullable": true
+          }
+        }
+      }
+    ]
+  },
+  "migrationType": "pgroll",
+  "name": "mig_col4jve313u6cbeckchg",
+  "parent": "mig_col4jlvqt1dmfm7g0tkg",
+  "startedAt": "2024-04-25T12:18:06.76766Z"
+}
