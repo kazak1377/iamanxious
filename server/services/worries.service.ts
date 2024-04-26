@@ -13,5 +13,14 @@ export const latestWorries = async () => {
             offset: 0,
         },
     });
-    return worries;
+    return {
+        worries: worries.records.toArray(),
+    };
+};
+
+export const createWorry = async (worry: string) => {
+    const newWorry = await client.db.worries.create({
+        worry_text: worry,
+    });
+    return newWorry;
 };

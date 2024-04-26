@@ -7,12 +7,11 @@ definePageMeta({
 <template>
     <div>
         <section class="max-w-screen-md mx-auto mt-40 mb-24 glow:bg-red-100">
-            <h1
-                class="text-7xl p-4 text-left font-bold from-purple-300 via-pink-300 to-blue-300 bg-gradient-to-r bg-clip-text text-transparent"
-            >
+            <page-title>
                 I am Anxious – <br />
                 You're Not Alone
-            </h1>
+            </page-title>
+
             <p class="text-3xl p-4 font-semibold text-gray-300">
                 A private haven where you can unburden your anxieties
                 anonymously and safely.
