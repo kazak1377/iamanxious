@@ -10,3 +10,9 @@ authentificate_db:
 ## Run project locally
 dev:
 	bun run --bun dev
+
+.ONESHELL:
+## Setup git in devcontainer
+git_setup:
+	git config --global user.email "max@kozachenko.io"
+	git config --global user.name "Max Kozachenko"
