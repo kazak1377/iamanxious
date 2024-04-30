@@ -13,17 +13,17 @@
                 <span class="italic">anonymously</span>
                 and <span class="italic">safely</span>.
             </p>
-            <div class="flex flex-row gap-10">
+            <div class="flex flex-row md:gap-10 flex-wrap px-4 gap-5 mt-5">
                 <nuxt-link
                     to="/about"
-                    class="flex flex-row gap-5 text-white font-semibold items-center justify-start mt-10 p-4"
+                    class="flex flex-row gap-5 text-white font-semibold items-center justify-start"
                 >
                     <img src="/info-icon.svg" alt="" />
                     About
                 </nuxt-link>
                 <nuxt-link
                     to="/read"
-                    class="flex flex-row gap-5 text-white font-semibold items-center justify-start mt-10 p-4"
+                    class="flex flex-row gap-5 text-white font-semibold items-center justify-start"
                 >
                     <img src="/chat-icon.svg" alt="" />
                     Read others' worries
