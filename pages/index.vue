@@ -2,7 +2,7 @@
 
 <template>
     <div>
-        <section class="max-w-screen-md mx-auto mt-40 mb-24">
+        <section class="max-w-screen-md mx-auto mt-40">
             <glass-card>
                 <page-title>
                     I am Anxious – <br />
@@ -15,7 +15,7 @@
                 </p>
             </glass-card>
         </section>
-        <section class="max-w-screen-md mx-auto mt-24 mb-24">
+        <section class="max-w-screen-md mx-auto mt-10">
             <glass-card>
                 <h2 class="text-2xl md:text-4xl p-4 font-bold text-gray-300">
                     How it Works

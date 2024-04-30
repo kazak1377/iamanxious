@@ -5,7 +5,7 @@
             <div class="p-4">
                 <textarea
                     v-model="worryText"
-                    class="w-full h-48 p-4 mt-4 text-xl bg-black/5 border text-white/90 placeholder-white/70 border-black/10 resize-none shadow-inner rounded-lg focus:outline-none"
+                    class="w-full h-48 p-4 mt-4 text-lg md:text-xl bg-black/5 border text-white/90 placeholder-white/70 border-black/10 resize-none shadow-inner rounded-lg focus:outline-none"
                     placeholder="What are you worried about?"
                 ></textarea>
             </div>
