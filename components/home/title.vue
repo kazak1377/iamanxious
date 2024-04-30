@@ -2,13 +2,13 @@
     <glass-card>
         <div class="flex flex-col justify-between h-full pt-10">
             <GradientText>
-                <h1 class="text-6xl">
+                <h1 class="text-3xl md:text-6xl">
                     <p class="font-semibold">“I am Anxious” –</p>
                     <p class="font-thin">You're Not Alone</p>
                 </h1>
             </GradientText>
 
-            <p class="text-2xl font-light p-4 text-gray-400">
+            <p class="text-xl md:text-2xl font-light p-4 text-gray-400">
                 A private heaven where you can unburden your anxieties
                 <span class="italic">anonymously</span>
                 and <span class="italic">safely</span>.
