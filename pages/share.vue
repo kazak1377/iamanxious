@@ -5,14 +5,14 @@
             <div class="p-4">
                 <textarea
                     v-model="worryText"
-                    class="w-full h-48 p-4 mt-4 text-xl bg-fuchsia-950/30 border text-white/75 border-fuchsia-800/40 rounded-lg focus:outline-none focus:border-transparent"
+                    class="w-full h-48 p-4 mt-4 text-xl bg-black/5 border text-white/90 placeholder-white/70 border-black/10 resize-none shadow-inner rounded-lg focus:outline-none"
                     placeholder="What are you worried about?"
                 ></textarea>
             </div>
             <div class="p-4">
                 <button
                     @click="shareWorry"
-                    class="bg-purple-600 rounded-full px-7 py-4 text-white text-lg hover:ring-2 ring-fuchsia-300"
+                    class="rounded-full bg-purple-700 text-white px-5 py-2 border border-purple-800 drop-shadow-xl shadow-l hover:drop-shadow-2xl hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
                 >
                     Share with the world
                 </button>

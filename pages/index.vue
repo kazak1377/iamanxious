@@ -34,13 +34,13 @@
                 >
                     <nuxt-link
                         to="/share"
-                        class="rounded-xl bg-purple-800 text-white px-10 py-4"
+                        class="rounded-full bg-purple-800 text-white px-5 py-2 border border-purple-900 drop-shadow-xl shadow-lg"
                     >
                         Share your worries
                     </nuxt-link>
                     <nuxt-link
                         to="/read"
-                        class="rounded-xl bg-lime-700 text-white px-10 py-4"
+                        class="rounded-full bg-lime-700 text-white px-5 py-2 border border-lime-800 drop-shadow-xl shadow-lg"
                     >
                         Read others' worries
                     </nuxt-link>

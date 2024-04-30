@@ -14,7 +14,7 @@
                 <nuxt-link to="/share" class="text-white">Share</nuxt-link>
                 <nuxt-link to="/read" class="text-white">Read</nuxt-link>
             </nav>
-            <div class="z-20 pb-32">
+            <div class="z-20 pb-32 px-5">
                 <slot></slot>
             </div>
 
@@ -22,7 +22,7 @@
                 class="z-20 w-full text-white/80 rounded-t-2xl absolute bottom-0 bg-white/10 backdrop-blur-xl border border-white/20 border-b-0 drop-shadow-2xl shadow-2xl p-5 flex flex-col gap-5"
             >
                 <div class="flex flex-row" v-if="false">
-                    <div class="flex flex-col">
+                    <div class="flex flex-col gap-2">
                         <span>Want to develop something special?</span>
                         <a href="mailto:max@kozachenko.io" class="text-white">
                             max@kozachenko.io
