@@ -1,10 +1,10 @@
 <template>
-    <div>
+    <section class="mt-16 max-w-screen-md mx-auto">
         <PageTitle>Recent worries</PageTitle>
         <div class="flex flex-col gap-3 w-full">
             <worry v-for="worry in worries" :key="worry.id" :worry="worry" />
         </div>
-    </div>
+    </section>
 </template>
 
 <script lang="ts" setup>

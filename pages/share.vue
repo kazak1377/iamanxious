@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="mt-40 max-w-screen-md mx-auto">
         <page-title>Share what are you worried about</page-title>
         <div class="p-4">
             <textarea
