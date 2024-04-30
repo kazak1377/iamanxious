@@ -9,7 +9,7 @@
                     You're Not Alone
                 </page-title>
 
-                <p class="text-3xl p-4 font-semibold text-gray-300">
+                <p class="text-xl md:text-3xl p-4 font-semibold text-gray-300">
                     A private heaven where you can unburden your anxieties
                     anonymously and safely.
                 </p>
@@ -17,10 +17,10 @@
         </section>
         <section class="max-w-screen-md mx-auto mt-24 mb-24">
             <glass-card>
-                <h2 class="text-4xl p-4 font-bold text-gray-300">
+                <h2 class="text-2xl md:text-4xl p-4 font-bold text-gray-300">
                     How it Works
                 </h2>
-                <p class="text-xl p-4 text-gray-100">
+                <p class="text-lg md:text-xl p-4 text-gray-100">
                     Everyone has moments of doubt and anxiety, but no one should
                     have to face them alone. 'I am Anxious' provides a space
                     where you can share your fears and worries without revealing
@@ -30,7 +30,7 @@
                     together, anonymously.
                 </p>
                 <div
-                    class="flex gap-4 flex-row items-center justify-start mt-10 p-4"
+                    class="flex gap-4 flex-row items-center justify-start mt-10 p-4 flex-wrap"
                 >
                     <nuxt-link
                         to="/share"
