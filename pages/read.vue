@@ -1,7 +1,7 @@
 <template>
     <section class="mt-16 max-w-screen-md mx-auto">
         <PageTitle>Recent worries</PageTitle>
-        <div class="flex flex-col gap-3 w-full">
+        <div class="flex flex-col gap-3 w-full mt-14">
             <worry v-for="worry in worries" :key="worry.id" :worry="worry" />
         </div>
     </section>
@@ -15,6 +15,7 @@ const worries = ref<WorriesRecord[]>([]);
 
 onMounted(async () => {
     const resp = await $client.worries.latest.query();
+
     worries.value = resp.worries as any as WorriesRecord[];
 });
 </script>

@@ -1,10 +1,10 @@
 <template>
-    <div class="border border-fuchsia-500 text-white/50 rounded-lg p-5">
+    <glass-card class="p-5 text-white/80">
         <p class="text-xl">{{ props.worry.worry_text }}</p>
         <div class="flex justify-end items-center">
             <span class="text-sm text-white/20">{{ createdAt }}</span>
         </div>
-    </div>
+    </glass-card>
 </template>
 
 <script lang="ts" setup>

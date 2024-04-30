@@ -1,6 +1,6 @@
 <template>
     <div
-        class="absolute bg-fuchsia-600/25 animate-pulse rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none blur-3xl"
+        class="absolute bg-fuchsia-600/25 animate-pulse rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none blur-3xl z-10"
         :style="{
             left: `${x}px`,
             top: `${y}px`,
