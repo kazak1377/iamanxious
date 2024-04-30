@@ -1,8 +1,8 @@
 <template>
-    <section class="mt-16 max-w-screen-md mx-auto">
+    <section class="mt-16 max-w-screen-md mx-auto pt-7">
         <PageTitle>Recent worries</PageTitle>
         <progress-loader v-if="loading" />
-        <div class="flex flex-col gap-3 w-full mt-14">
+        <div class="flex flex-col gap-3 w-full mt-3 md:mt-14">
             <worry v-for="worry in worries" :key="worry.id" :worry="worry" />
         </div>
         <div></div>

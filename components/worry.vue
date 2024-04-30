@@ -1,6 +1,6 @@
 <template>
-    <glass-card class="p-5 text-white/80">
-        <p class="text-xl">{{ props.worry.worry_text }}</p>
+    <glass-card class="text-white/80">
+        <p class="text-lg md:text-xl mb-2">{{ props.worry.worry_text }}</p>
         <div class="flex justify-end items-center">
             <span class="text-sm text-white/20">{{ createdAt }}</span>
         </div>
