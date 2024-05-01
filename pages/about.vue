@@ -1,6 +1,6 @@
 <template>
-    <section class="pt-28 flex flex-col xl:flex-row gap-10 mb-20">
-        <glass-card>
+    <section class="pt-8 flex flex-col gap-10 mb-20">
+        <glass-card class="p-2 xl:p-8">
             <gradient-text class="text-4xl p-4 font-bold text-gray-300">
                 About "I Am Anxious" project
             </gradient-text>
@@ -51,7 +51,7 @@
                 </p>
             </div>
         </glass-card>
-        <glass-card>
+        <glass-card class="p-2 xl:p-8">
             <gradient-text class="text-4xl p-4 font-bold text-gray-300">
                 Meet the Creators
             </gradient-text>
@@ -60,41 +60,43 @@
             >
                 <p>
                     Hello! We are Alla Medvedieva and Max Kozachenko, the minds
-                    behind the "I Am Anxious" project. Alla excels in creating
-                    intuitive and engaging user experiences, while Max ensures
-                    robust software functionality and technical expertise.
+                    behind the "I Am Anxious" project.
                 </p>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-screen-md mx-auto w-full"
+                >
+                    <glass-card class="flex flex-col gap-5 p-5 w-full">
+                        <div class="w-full flex items-center justify-center">
+                            <img src="/max.png" alt="" class="h-52" />
+                        </div>
+                        <div>
+                            <p class="font-semibold">Max Kozachenko</p>
+                            <p>CTO, Lead FullStack Developer</p>
+                        </div>
+                    </glass-card>
+                    <glass-card
+                        class="flex flex-col justify-between gap-5 p-5 pb-0"
+                    >
+                        <div>
+                            <p class="font-semibold">Alla Medvedieva</p>
+                            <p>Design Lead, Senior UX/UI designer</p>
+                        </div>
+                        <div class="w-full flex items-center justify-end">
+                            <img src="/alla.png" alt="" class="h-52" />
+                        </div>
+                    </glass-card>
+                </div>
                 <p>
-                    <strong>Flexible Collaboration for Your Needs:</strong>
+                    <i
+                        >Looking for comprehensive design and development or
+                        just one of these services?
+                    </i>
                     <br />
-                    Looking for comprehensive design and development or just one
-                    of these services? Whether you need Alla’s design magic,
-                    Max’s development expertise, or both, we are here to adapt
-                    to the specific requirements of your project.
-                </p>
-                <p>
-                    <strong>Our commitment to privacy is paramount:</strong>
                     <br />
-                </p>
-                <ul class="list-disc pl-6">
-                    <li>
-                        Design and Development Expertise: From concept creation
-                        to the final product.
-                    </li>
-                    <li>
-                        Tailored Solutions: Custom services that align perfectly
-                        with your project’s goals.
-                    </li>
-                    <li>
-                        Commitment to Excellence: We bring the same dedication
-                        to quality and privacy to every project as we have to "I
-                        Am Anxious."
-                    </li>
-                </ul>
-                <p>
-                    If you're interested in exploring how we can contribute to
-                    your project, either together or individually, please don't
-                    hesitate to contact us at
+                    Whether you need Alla’s design magic, Max’s development
+                    expertise, or both, we are here to adapt to the specific
+                    requirements of your project. Please don't hesitate to
+                    contact us at
 
                     <a
                         href="mailto:projects@kozachenko.io"
