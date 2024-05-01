@@ -42,7 +42,7 @@
 
                     <a
                         href="mailto:iamanxious@kozachenko.io"
-                        class="text-fuchsia-300"
+                        class="text-fuchsia-300 font-semibold"
                     >
                         iamanxious@kozachenko.io
                     </a>
@@ -103,7 +103,7 @@
 
                     <a
                         href="mailto:projects@kozachenko.io"
-                        class="text-fuchsia-300"
+                        class="text-fuchsia-300 font-semibold"
                     >
                         projects@kozachenko.io
                     </a>
