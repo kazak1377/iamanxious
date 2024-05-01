@@ -1,6 +1,8 @@
 <template>
-    <glass-card class="text-white/80">
-        <p class="text-lg md:text-xl mb-2">{{ props.worry.worry_text }}</p>
+    <glass-card class="text-white/80 flex flex-col justify-between">
+        <p class="text-lg md:text-xl mb-2 break-words">
+            {{ props.worry.worry_text }}
+        </p>
         <div class="flex justify-end items-center">
             <span class="text-sm text-white/20">{{ createdAt }}</span>
         </div>

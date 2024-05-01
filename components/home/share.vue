@@ -10,6 +10,9 @@
                 placeholder="life, job, tasks, routine, Instagram, etc."
             ></textarea>
         </div>
+        <div class="p-4" v-if="error">
+            <p class="text-red-500 font-light">{{ error }}</p>
+        </div>
         <div class="p-4">
             <button
                 @click="shareWorry"
@@ -22,20 +25,34 @@
 </template>
 
 <script lang="ts" setup>
+import type { TRPCClientError } from "@trpc/client";
+import type { AppRouter } from "@/server/trpc/routers";
+
 const worryText = ref<string>("");
 const { $client } = useNuxtApp();
 const router = useRouter();
+const error = ref<string | null>(null);
 
 const shareWorry = async () => {
+    error.value = null;
     if (worryText.value.trim() === "") {
+        error.value = "Sometimes it's good to write something.";
         return;
     }
 
-    await $client.worries.create.mutate({
-        worry: worryText.value,
-    });
-    worryText.value = "";
-    await router.push("/read");
+    try {
+        await $client.worries.create.mutate({
+            worry: worryText.value,
+        });
+        worryText.value = "";
+        await router.push("/read");
+    } catch (e) {
+        const err = e as TRPCClientError<AppRouter["worries"]["create"]>;
+        const errors = JSON.parse(err.message) as Array<{ message: string }>;
+        const errorMessages = errors.map((e) => e.message).join(", ");
+
+        error.value = errorMessages;
+    }
 };
 </script>
 
