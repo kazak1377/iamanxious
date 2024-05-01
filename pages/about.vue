@@ -9,8 +9,11 @@
             >
                 <p>
                     <strong>I Am Anxious</strong> is a non-profit initiative
-                    designed by Alla Medvedieva and developed by Max Kozachenko
-                    to support individuals coping with anxiety. This platform
+                    designed by
+                    <strong class="font-semibold">Alla Medvedieva</strong> and
+                    developed by
+                    <strong class="font-semibold">Max Kozachenko</strong> to
+                    support individuals coping with anxiety. This platform
                     provides a secure space for users to anonymously share their
                     concerns and connect with others experiencing similar
                     challenges.
@@ -21,12 +24,12 @@
                 </p>
                 <ul class="list-disc pl-6">
                     <li>
-                        Complete Anonymity: No personal information is required
-                        to participate.
+                        <i>Complete Anonymity:</i> No personal information is
+                        required to participate.
                     </li>
                     <li>
-                        No Tracking: We do not use cookies or any tracking
-                        technologies.
+                        <i>No Tracking:</i> We do not use cookies or any
+                        tracking technologies.
                     </li>
                 </ul>
 
@@ -45,9 +48,9 @@
                     </a>
                 </p>
                 <p>
-                    <strong>Monetization Policy:</strong> Our financial
-                    strategies are still being defined. However, we pledge never
-                    to sell any user information.
+                    <i>Monetization Policy:</i> Our financial strategies are
+                    still being defined. However, we pledge never to sell any
+                    user information.
                 </p>
             </div>
         </glass-card>
