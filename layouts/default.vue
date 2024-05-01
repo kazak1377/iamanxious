@@ -79,7 +79,7 @@ body {
     -webkit-overflow-scrolling: touch;
     background-image: url("/bg3.png");
     background-size: cover;
-    background-position: center;
+    background-position: right top;
     background-attachment: fixed;
 }
 </style>

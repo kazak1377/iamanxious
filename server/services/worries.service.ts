@@ -9,7 +9,7 @@ export const latestWorries = async () => {
             direction: "desc",
         },
         pagination: {
-            size: 10,
+            size: 12,
             offset: 0,
         },
     });
