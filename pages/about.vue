@@ -8,11 +8,7 @@
                 class="text-lg p-4 text-gray-100 flex flex-col gap-8 font-light"
             >
                 <p>
-                    <strong>I Am Anxious</strong> is a non-profit initiative
-                    designed by
-                    <strong class="font-semibold">Alla Medvedieva</strong> and
-                    developed by
-                    <strong class="font-semibold">Max Kozachenko</strong> to
+                    <strong>I Am Anxious</strong> is a non-profit initiative to
                     support individuals coping with anxiety. This platform
                     provides a secure space for users to anonymously share their
                     concerns and connect with others experiencing similar
