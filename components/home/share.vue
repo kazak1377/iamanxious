@@ -13,7 +13,7 @@
         <div class="p-4">
             <button
                 @click="shareWorry"
-                class="share-btn px-7 py-3 text-white uppercase rounded-lg"
+                class="let-the-worries-go-btn px-7 py-3 text-white uppercase rounded-lg"
             >
                 Let the worries go
             </button>
@@ -40,7 +40,7 @@ const shareWorry = async () => {
 </script>
 
 <style>
-.share-btn {
+.let-the-worries-go-btn {
     box-sizing: border-box;
 
     /* Auto layout */
