@@ -1,6 +1,6 @@
 <template>
-    <glass-card class="w-full">
-        <gradient-text class="text-3xl md:text-4xl font-semibold mt-10">
+    <glass-card class="w-full p-3 md:p-10">
+        <gradient-text class="text-3xl md:text-4xl font-semibold xl:mt-10">
             I am worried about...
         </gradient-text>
         <div class="px-4">
@@ -16,9 +16,10 @@
         <div class="p-4">
             <button
                 @click="shareWorry"
-                class="let-the-worries-go-btn px-7 py-3 text-white uppercase rounded-lg"
+                class="let-the-worries-go-btn px-7 py-3 text-white uppercase rounded-lg font-semibold"
             >
-                Let the worries go
+                Let the worries
+                <span class="italic pl-1">go</span>
             </button>
         </div>
     </glass-card>

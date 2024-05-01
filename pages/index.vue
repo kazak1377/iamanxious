@@ -13,8 +13,9 @@
         </section>
         <section class="mt-10">
             <gradient-text class="w-full text-center text-3xl font-semibold">
-                Let’s navigate the <span class="italic">complexities</span> of
-                <span class="italic">life</span> together, anonymously!
+                Let’s navigate the
+                <span class="italic">complexities of life</span> together,
+                anonymously!
             </gradient-text>
         </section>
     </div>

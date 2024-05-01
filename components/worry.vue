@@ -1,5 +1,5 @@
 <template>
-    <glass-card class="text-white/80 flex flex-col justify-between">
+    <glass-card class="text-white/80 flex flex-col justify-between p-5 xl:p-8">
         <p class="text-lg md:text-xl mb-2 break-words">
             {{ props.worry.worry_text }}
         </p>

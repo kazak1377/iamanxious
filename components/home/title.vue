@@ -1,6 +1,6 @@
 <template>
-    <glass-card>
-        <div class="flex flex-col justify-between h-full pt-10">
+    <glass-card class="p-3 md:p-10 pb-10">
+        <div class="flex flex-col justify-between h-full xl:pt-10">
             <GradientText>
                 <h1 class="text-3xl md:text-6xl">
                     <p class="font-semibold">“I am Anxious” –</p>

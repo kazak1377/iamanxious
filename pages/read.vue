@@ -1,9 +1,11 @@
 <template>
-    <section class="mx-auto pt-7">
-        <PageTitle>Recent worries</PageTitle>
+    <section class="w-full pt-7">
+        <gradient-text class="text-3xl font-semibold lg:text-5xl p-0 mb-7">
+            Recent worries
+        </gradient-text>
         <progress-loader v-if="loading" />
         <div
-            class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-3 w-full mt-3 md:mt-14"
+            class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-3 w-full mt-3"
         >
             <worry v-for="worry in worries" :key="worry.id" :worry="worry" />
         </div>
