@@ -59,7 +59,8 @@
             >
                 <p>
                     Hello! We are Alla Medvedieva and Max Kozachenko, the minds
-                    behind the "I Am Anxious" project.
+                    behind the "I Am Anxious" project. We are from 🇺🇦Ukraine and
+                    know firsthand the importance of mental health support.
                 </p>
                 <div
                     class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-screen-md mx-auto w-full"

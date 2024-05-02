@@ -32,6 +32,9 @@
                 >
                     <nuxt-link to="/about">About us →</nuxt-link>
                     <nuxt-link to="/read">Others’ worries →</nuxt-link>
+                    <a href="https://war.ukraine.ua/" target="_blank">
+                        Help 🇺🇦Ukraine
+                    </a>
                 </div>
                 <div class="flex flex-col gap-5 font-light text-white/40">
                     <p>
