@@ -18,6 +18,19 @@ export const latestWorries = async () => {
     };
 };
 
+export const getLatestWorrie = async () => {
+    const worry = await client.db.worries.getFirst({
+        sort: {
+            column: "xata_createdat",
+            direction: "desc",
+        },
+    });
+
+    return {
+        lastWorry: worry,
+    };
+};
+
 export const createWorry = async (worry: string) => {
     const newWorry = await client.db.worries.create({
         worry_text: worry,

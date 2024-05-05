@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { $client } = useNuxtApp();
+
+const resp = await $client.worries.singleLatest.query();
+</script>
 
 <template>
     <div class="mt-10 flex flex-col gap-10">
@@ -6,6 +10,11 @@
             <div class="flex flex-col xl:flex-row gap-10">
                 <home-title />
                 <home-share />
+                <div class="flex flex-col w-full min-h-[100%]" v-if="false">
+                    <glass-card>
+                        {{ resp.lastWorry?.worry_text }}
+                    </glass-card>
+                </div>
             </div>
         </section>
         <section>

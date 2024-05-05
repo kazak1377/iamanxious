@@ -1,5 +1,9 @@
 import { publicProcedure, router } from "../trpc";
-import { latestWorries, createWorry } from "../../services/worries.service";
+import {
+    latestWorries,
+    createWorry,
+    getLatestWorrie,
+} from "../../services/worries.service";
 import { z } from "zod";
 
 const hasEmail = (text: string) => /\S+@\S+\.\S+/.test(text);
@@ -37,6 +41,9 @@ const isSafeContent = (text: string) => {
 export const worriesRouter = router({
     latest: publicProcedure.query(async () => {
         return latestWorries();
+    }),
+    singleLatest: publicProcedure.query(async () => {
+        return getLatestWorrie();
     }),
     create: publicProcedure
         .input(
