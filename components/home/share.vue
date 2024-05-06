@@ -1,6 +1,6 @@
 <template>
-    <glass-card class="w-full p-3 md:p-10">
-        <gradient-text class="text-3xl md:text-4xl font-semibold xl:mt-10">
+    <glass-card class="w-full p-4">
+        <gradient-text class="text-xl md:text-3xl font-semibold">
             I am worried about...
         </gradient-text>
         <div class="px-4">

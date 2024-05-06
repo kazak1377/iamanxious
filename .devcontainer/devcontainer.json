@@ -21,7 +21,9 @@
                 "YoavBls.pretty-ts-errors",
                 "bradlc.vscode-tailwindcss",
                 "macieklad.tailwind-sass-syntax",
-                "Vue.volar"
+                "Vue.volar",
+                "vuetifyjs.vuetify-vscode",
+                "Supermaven.supermaven"
             ]
         }
     }

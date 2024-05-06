@@ -9,11 +9,24 @@ const resp = await $client.worries.singleLatest.query();
         <section>
             <div class="flex flex-col xl:flex-row gap-10">
                 <home-title />
-                <home-share />
-                <div class="flex flex-col w-full min-h-[100%]" v-if="false">
-                    <glass-card>
-                        {{ resp.lastWorry?.worry_text }}
+
+                <div class="flex flex-col w-full min-h-[100%] gap-4">
+                    <glass-card class="text-white/80 p-3">
+                        <gradient-text class="text-xl font-semibold">
+                            Last person was worried about:
+                        </gradient-text>
+                        <p class="px-4 text-white/80 font-light text-lg">
+                            {{ resp.lastWorry?.worry_text }}
+                        </p>
+                        <p class="text-right w-full text-white/30 px-4">
+                            {{
+                                new Date(
+                                    resp.lastWorry?.xata.createdAt,
+                                ).toLocaleString()
+                            }}
+                        </p>
                     </glass-card>
+                    <home-share />
                 </div>
             </div>
         </section>
