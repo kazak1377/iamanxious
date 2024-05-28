@@ -5,7 +5,7 @@ const client = getXataClient();
 export const latestWorries = async () => {
     const worries = await client.db.worries.getPaginated({
         sort: {
-            column: "xata_createdat",
+            column: "xata.createdAt",
             direction: "desc",
         },
         pagination: {
@@ -21,7 +21,7 @@ export const latestWorries = async () => {
 export const getLatestWorrie = async () => {
     const worry = await client.db.worries.getFirst({
         sort: {
-            column: "xata_createdat",
+            column: "xata.createdAt",
             direction: "desc",
         },
     });

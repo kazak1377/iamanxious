@@ -9,43 +9,7 @@ import type {
 const tables = [
   {
     name: "worries",
-    columns: [
-      {
-        name: "worry_text",
-        type: "text",
-        notNull: false,
-        unique: false,
-        defaultValue: null,
-      },
-      {
-        name: "xata_createdat",
-        type: "datetime",
-        notNull: true,
-        unique: false,
-        defaultValue: "now()",
-      },
-      {
-        name: "xata_id",
-        type: "text",
-        notNull: true,
-        unique: true,
-        defaultValue: "('rec_'::text || (xata_private.xid())::text)",
-      },
-      {
-        name: "xata_updatedat",
-        type: "datetime",
-        notNull: true,
-        unique: false,
-        defaultValue: "now()",
-      },
-      {
-        name: "xata_version",
-        type: "int",
-        notNull: true,
-        unique: false,
-        defaultValue: "0",
-      },
-    ],
+    columns: [{ name: "worry_text", type: "text", defaultValue: "" }],
   },
 ] as const;
 
@@ -62,7 +26,8 @@ export type DatabaseSchema = {
 const DatabaseClient = buildClient();
 
 const defaultOptions = {
-  databaseURL: "https://Personal-0r2ml9.eu-west-1.xata.sh/db/anxiety",
+  databaseURL:
+    "https://My-personal-workspace-9s4vdm.eu-west-1.xata.sh/db/iamanxious",
 };
 
 export class XataClient extends DatabaseClient<DatabaseSchema> {
