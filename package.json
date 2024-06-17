@@ -16,6 +16,7 @@
     "@vueuse/core": "^10.9.0",
     "@xata.io/client": "^0.29.4",
     "nuxt": "^3.11.2",
+    "nuxt-gtag": "^2.0.6",
     "trpc-nuxt": "^0.10.21",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
