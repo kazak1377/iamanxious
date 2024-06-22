@@ -10,13 +10,18 @@
                 placeholder="life, job, tasks, routine, Instagram, etc."
             ></textarea>
         </div>
-        <div class="p-4" v-if="error">
-            <p class="text-red-500 font-light">{{ error }}</p>
+        <div class="p-4">
+            <p
+                :class="`${error ? 'text-red-500 text-left' : 'text-white/60 text-right'} font-light w-full`"
+            >
+                {{ error ? error : textLimitLabel }}
+            </p>
         </div>
         <div class="p-4">
             <button
+                :disabled="error || worryText.length > 300"
                 @click="shareWorry"
-                class="let-the-worries-go-btn px-7 py-3 text-white uppercase rounded-lg font-semibold"
+                class="let-the-worries-go-btn px-7 py-3 text-white uppercase rounded-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
             >
                 Let the worries
                 <span class="italic pl-1">go</span>
@@ -33,6 +38,16 @@ const worryText = ref<string>("");
 const { $client } = useNuxtApp();
 const router = useRouter();
 const error = ref<string | null>(null);
+const textLimitLabel = computed(
+    () => `${worryText.value.length}/300 characters`,
+);
+
+watch(worryText, () => {
+    error.value = null;
+    if (worryText.value.length > 300) {
+        error.value = `You are ${worryText.value.length - 300} characters over the limit.`;
+    }
+});
 
 const shareWorry = async () => {
     error.value = null;
