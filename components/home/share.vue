@@ -12,7 +12,7 @@
         </div>
         <div class="p-4">
             <p
-                :class="`${error ? 'text-red-500 text-left' : 'text-white/60 text-right'} font-light w-full`"
+                :class="`${error ? 'text-red-400 font-semibold text-left' : 'text-white/60 text-right font-light'}  w-full`"
             >
                 {{ error ? error : textLimitLabel }}
             </p>
