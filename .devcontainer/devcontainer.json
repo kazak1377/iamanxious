@@ -14,8 +14,6 @@
                 "EditorConfig.EditorConfig",
                 "syler.sass-indented",
                 "dbaeumer.vscode-eslint",
-                "GitHub.copilot",
-                "GitHub.copilot-chat",
                 "Nuxtr.nuxtr-vscode",
                 "esbenp.prettier-vscode",
                 "YoavBls.pretty-ts-errors",
